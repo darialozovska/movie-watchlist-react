@@ -1,0 +1,20 @@
+.section {
+    margin-top: 32px;
+    margin-left: 32px;
+    margin-right: 32px;
+    height: 255px;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0%;
+    margin-bottom: 16px;
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    width: 1092px;
+}

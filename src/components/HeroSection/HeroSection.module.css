@@ -1,0 +1,90 @@
+.hero {
+    background-image: url("../../assets/images/hero-image.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 455px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    height: 32px;
+    margin-left: 32px;
+    margin-right: 32px;
+    margin-top: 40px;
+}
+
+.navList {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+.navList2 {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+}
+
+.img {
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.name {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0%;
+}
+
+.content {
+    margin-top: 152px;
+    margin-left: 32px;
+    margin-right: 32px;
+}
+
+.title {
+    font-size: 48px;
+    font-weight: 600;
+    letter-spacing: 0%;
+    margin-bottom: 20px;
+}
+
+.text {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0%;
+    margin-bottom: 36px;
+}
+
+.actions {
+    display: flex;
+    flex-direction: row;
+}
+
+.watchBtn {
+    width: 139px;
+    height: 54px;
+    background-color: #6100C2;
+    color: white;
+    border-radius: 14px;
+    margin-right: 16px;
+    padding: 16px 24px;
+}
+
+.favBtn {
+    background-color: white;
+    width: 54px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    border-radius: 14px;
+    padding: 15px;
+}

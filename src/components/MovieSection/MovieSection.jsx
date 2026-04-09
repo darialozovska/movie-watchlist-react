@@ -1,6 +1,7 @@
-import MovieCard from "./MovieCard"
-import movies from "../data/movies"
+import MovieCard from "../MovieCard/MovieCard"
+import movies from "../../data/movies"
 import { useState } from "react";
+import styles from "./MovieSection.module.css";
 
 const MovieSection = () => {
     const [favourites, setFavourites] = useState([]);
@@ -12,13 +13,14 @@ const MovieSection = () => {
         }
     }
     return (
-        <section className="movie-section">
-                <h3 className="movie-title">Trending</h3>
-                <div className="box-list">
-                    <ul className="movie-list">
+        <section className={styles.section}>
+                <h3 className={styles.title}>Trending</h3>
+                <div className={styles.boxList}>
+                    <ul className={styles.list}>
                         {movies.map((movie) => (
                             <MovieCard
                                 key={movie.id}
+                                img={movie.img}
                                 title={movie.title}
                                 info={movie.info}
                                 isFavourite={favourites.includes(movie.id)}
