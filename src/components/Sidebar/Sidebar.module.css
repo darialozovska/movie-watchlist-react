@@ -26,13 +26,16 @@
     margin-bottom: 100px;
 }
 
-/* .list3 {
-    margin-bottom: 167px;
-} */
-
 .item {
     display: flex;
     flex-direction: row;
+}
+
+.textActive {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0%;
+    margin-left: 12px;
 }
 
 .text {
@@ -40,4 +43,12 @@
     font-weight: 400;
     letter-spacing: 0%;
     margin-left: 12px;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: inherit;
 }

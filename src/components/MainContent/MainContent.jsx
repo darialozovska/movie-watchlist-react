@@ -1,14 +1,9 @@
-import HeroSection from "../HeroSection/HeroSection";
-import MovieSection from "../MovieSection/MovieSection";
-import ContinueWatchingSection from "../ContinueWatchingSection/ContinueWatchingSection";
 import styles from "./MainContent.module.css";
 
-const MainContent = () => {
+const MainContent = ({ children }) => {
     return (
         <div className={styles.main}>
-            <HeroSection/>
-            <MovieSection />
-            <ContinueWatchingSection />
+            {children}
         </div>
     )
 }

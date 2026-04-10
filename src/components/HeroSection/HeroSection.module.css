@@ -6,44 +6,6 @@
     height: 455px;
 }
 
-.nav {
-    display: flex;
-    justify-content: space-between;
-    height: 32px;
-    margin-left: 32px;
-    margin-right: 32px;
-    margin-top: 40px;
-}
-
-.navList {
-    display: flex;
-    gap: 32px;
-    align-items: center;
-}
-
-.navList2 {
-    display: flex;
-    gap: 32px;
-    align-items: center;
-    justify-content: center;
-}
-
-.icon {
-    width: 24px;
-    height: 24px;
-}
-
-.img {
-    border-radius: 50%;
-    margin-right: 8px;
-}
-
-.name {
-    font-size: 16px;
-    font-weight: 500;
-    letter-spacing: 0%;
-}
-
 .content {
     margin-top: 152px;
     margin-left: 32px;
@@ -77,6 +39,10 @@
     border-radius: 14px;
     margin-right: 16px;
     padding: 16px 24px;
+
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0%;
 }
 
 .favBtn {

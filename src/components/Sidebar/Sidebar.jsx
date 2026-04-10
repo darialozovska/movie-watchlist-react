@@ -1,5 +1,6 @@
 import styles from "./Sidebar.module.css";
 import sprite from "../../assets/icons/symbol-defs.svg"
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   return (
@@ -10,16 +11,20 @@ const Sidebar = () => {
           </svg>
         <ul className={styles.list}>
         <li className={styles.item}>
-          <svg className={styles.icon} width="24" height="24">
-            <use href={`${sprite}#icon-film`}></use>
-          </svg>
-          <p className={styles.text}>Home</p>
+            <Link to="/" className={styles.link}>
+              <svg className={styles.icon} width="24" height="24">
+              <use href={`${sprite}#icon-film`}></use>
+              </svg>
+              <p className={styles.textActive}>Home</p>
+            </Link>
         </li>
         <li className={styles.item}>
-          <svg className={styles.icon} width="24" height="24">
-            <use href={`${sprite}#icon-heart`}></use>
-          </svg>
-          <p className={styles.text}>Favourites</p>
+            <Link to="/favourites" className={styles.link}>
+              <svg className={styles.icon} width="24" height="24">
+              <use href={`${sprite}#icon-heart`}></use>
+              </svg>
+              <p className={styles.text}>Favourites</p>
+            </Link>
         </li>
         <li className={styles.item}>
           <svg className={styles.icon} width="24" height="24">
