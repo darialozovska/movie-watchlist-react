@@ -1,6 +1,6 @@
 import styles from "./Sidebar.module.css";
 import sprite from "../../assets/icons/symbol-defs.svg"
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Sidebar = () => {
   return (
@@ -11,26 +11,49 @@ const Sidebar = () => {
           </svg>
         <ul className={styles.list}>
         <li className={styles.item}>
-            <Link to="/" className={styles.link}>
-              <svg className={styles.icon} width="24" height="24">
+          <NavLink to="/" className={styles.link}>
+          {({ isActive }) => (
+          <>
+            <svg className={styles.icon} width="24" height="24">
               <use href={`${sprite}#icon-film`}></use>
-              </svg>
-              <p className={styles.textActive}>Home</p>
-            </Link>
+            </svg>
+
+            <p className={isActive ? styles.activeText : styles.text}>
+              Home
+            </p>
+          </>
+          )}
+        </NavLink>
         </li>
         <li className={styles.item}>
-            <Link to="/favourites" className={styles.link}>
-              <svg className={styles.icon} width="24" height="24">
+            <NavLink to="/favourites" className={styles.link}>
+          {({ isActive }) => (
+          <>
+            <svg className={styles.icon} width="24" height="24">
               <use href={`${sprite}#icon-heart`}></use>
-              </svg>
-              <p className={styles.text}>Favourites</p>
-            </Link>
+            </svg>
+
+            <p className={isActive ? styles.activeText : styles.text}>
+              Favourites
+            </p>
+          </>
+              )}
+            </NavLink>
         </li>
         <li className={styles.item}>
-          <svg className={styles.icon} width="24" height="24">
-            <use href={`${sprite}#icon-trending-up`}></use>
-          </svg>
-          <p className={styles.text}>Trending</p>
+          <NavLink to="/trending" className={styles.link}>
+          {({ isActive }) => (
+          <>
+            <svg className={styles.icon} width="24" height="24">
+              <use href={`${sprite}#icon-trending-up`}></use>
+            </svg>
+
+            <p className={isActive ? styles.activeText : styles.text}>
+              Trending
+            </p>
+          </>
+              )}
+            </NavLink>
         </li>
         <li className={styles.item}>
           <svg className={styles.icon} width="24" height="24">

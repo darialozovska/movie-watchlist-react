@@ -1,0 +1,21 @@
+.section {
+    margin-left: 32px;
+    margin-top: 65px;
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    margin-bottom: 56px;
+    flex-wrap: wrap;
+}
+
+.title {
+    margin-bottom: 16px;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 0;
+}
+
+

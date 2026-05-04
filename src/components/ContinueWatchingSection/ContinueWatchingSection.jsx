@@ -1,18 +1,8 @@
-import { useState } from "react"
 import ContinueWatchingCard from "../ContinueWatchingCard/ContinueWatchingCard";
 import continueWatching from "../../data/continueWatching";
 import styles from "./ContinueWatchingSection.module.css"
 
-const ContinueWatchingSection = () => {
-    const [favourites, setFavourites] = useState([]);
-
-    const toggleFavourite = (id) => {
-        if (favourites.includes(id)) {
-            setFavourites(favourites.filter((movieId) => movieId != id))
-        } else {
-            setFavourites([...favourites, id])
-        }
-    }
+const ContinueWatchingSection = ({ favourites, toggleFavourite}) => {
 
     return (
         <section className={styles.section}>

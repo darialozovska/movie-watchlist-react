@@ -31,13 +31,6 @@
     flex-direction: row;
 }
 
-.textActive {
-    font-size: 16px;
-    font-weight: 700;
-    letter-spacing: 0%;
-    margin-left: 12px;
-}
-
 .text {
     font-size: 16px;
     font-weight: 400;
@@ -51,4 +44,12 @@
     gap: 12px;
     text-decoration: none;
     color: inherit;
+}
+
+.activeText {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0%;
+    color: #fff;
+    margin-left: 12px;
 }

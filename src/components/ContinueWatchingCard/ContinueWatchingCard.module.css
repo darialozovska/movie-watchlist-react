@@ -22,4 +22,23 @@
     border-radius: 8px;
     display: flex;
     align-items: center;
+
+    transition: transform 200ms ease, background-color 200ms ease;
+}
+
+.btn:hover {
+    transform: scale(1.08);
+    background-color: #f3e9ff;
+}
+
+.btn:active {
+    transform: scale(0.92);
+}
+
+.icon {
+    transition: transform 200ms ease;
+}
+
+.btn:hover .icon {
+    transform: scale(1.15);
 }

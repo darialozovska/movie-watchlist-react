@@ -10,7 +10,10 @@ const HomePage = ({ favourites, toggleFavourite }) => {
                 favourites={favourites}
                 toggleFavourite={toggleFavourite}
             />
-            <ContinueWatchingSection />
+            <ContinueWatchingSection
+                favourites={favourites}
+                toggleFavourite={toggleFavourite}
+            />
         </>
     );
 };

@@ -1,17 +1,8 @@
 import MovieCard from "../MovieCard/MovieCard"
 import movies from "../../data/movies"
-import { useState } from "react";
 import styles from "./MovieSection.module.css";
 
-const MovieSection = () => {
-    const [favourites, setFavourites] = useState([]);
-    const toggleFavourite = (id) => {
-        if (favourites.includes(id)) {
-            setFavourites(favourites.filter((movieId) => movieId !== id));
-        } else {
-            setFavourites([...favourites, id])
-        }
-    }
+const MovieSection = ({ favourites, toggleFavourite}) => {
     return (
         <section className={styles.section}>
                 <h3 className={styles.title}>Trending</h3>

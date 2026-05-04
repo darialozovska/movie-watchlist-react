@@ -22,6 +22,8 @@
     border-radius: 8px;
     display: flex;
     align-items: center;
+
+    transition: transform 200ms ease, background-color 200ms ease;
 }
 
 .box {
@@ -45,4 +47,42 @@
     letter-spacing: 0%;
     margin-bottom: 24px;
     color: black;
+}
+
+.favouriteItem {
+    width: 348px;
+    height: 259px;
+}
+
+.favouritePoster {
+    height: 173px;
+}
+
+.favouriteBox {
+    height: 86px;
+}
+
+.favouriteFav {
+    margin: 20px 20px 207px 296px;
+}
+
+.selected {
+    border: 3px solid #6100C2;
+}
+
+.fav:hover {
+    transform: scale(1.08);
+    background-color: #f3e9ff;
+}
+
+.fav:active {
+    transform: scale(0.92);
+}
+
+.favIcon {
+    transition: transform 200ms ease;
+}
+
+.fav:hover .favIcon {
+    transform: scale(1.15);
 }
