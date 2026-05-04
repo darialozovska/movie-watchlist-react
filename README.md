@@ -4,7 +4,7 @@ An interactive movie watchlist application built with **React, JavaScript, and C
 
 ## 🚀 Live Demo
 
-[https://your-live-demo-link.com](https://movie-watchlist-react-alpha.vercel.app/)
+[https://movie-watchlist-react-alpha.vercel.app/](https://movie-watchlist-react-alpha.vercel.app/)
 
 ## 🔗 Repository
 
